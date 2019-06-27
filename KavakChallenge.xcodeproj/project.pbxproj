@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34F4F93893AA7C54944B74D6 /* Pods_KavakChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA45ED98AA563EA9F6B62E3D /* Pods_KavakChallenge.framework */; };
+		766FC31B5147CB68CFAEBA93 /* Pods_KavakChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A68647FFF5714108E2F146C /* Pods_KavakChallengeTests.framework */; };
+		9A2349B722C4362A00C2B387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349B622C4362A00C2B387 /* AppDelegate.swift */; };
+		9A2349B922C4362A00C2B387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349B822C4362A00C2B387 /* ViewController.swift */; };
+		9A2349BC22C4362A00C2B387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2349BA22C4362A00C2B387 /* Main.storyboard */; };
+		9A2349BF22C4362A00C2B387 /* KavakChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349BD22C4362A00C2B387 /* KavakChallenge.xcdatamodeld */; };
+		9A2349C122C4362B00C2B387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2349C022C4362B00C2B387 /* Assets.xcassets */; };
+		9A2349C422C4362B00C2B387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2349C222C4362B00C2B387 /* LaunchScreen.storyboard */; };
+		9A2349CF22C4362B00C2B387 /* KavakChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349CE22C4362B00C2B387 /* KavakChallengeTests.swift */; };
+		9A2349DA22C4362B00C2B387 /* KavakChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349D922C4362B00C2B387 /* KavakChallengeUITests.swift */; };
+		9A2349EE22C436DF00C2B387 /* BrastlewarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349ED22C436DF00C2B387 /* BrastlewarkModel.swift */; };
+		9A2349EF22C436DF00C2B387 /* BrastlewarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349ED22C436DF00C2B387 /* BrastlewarkModel.swift */; };
+		9A2349F122C437DC00C2B387 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349F022C437DC00C2B387 /* MainViewModel.swift */; };
+		9A2349F222C437DC00C2B387 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349F022C437DC00C2B387 /* MainViewModel.swift */; };
+		9A2349F422C4391900C2B387 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349F322C4391900C2B387 /* MainController.swift */; };
+		9A2349F522C4391900C2B387 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349F322C4391900C2B387 /* MainController.swift */; };
+		D97522D34D0448514D8F82CA /* Pods_KavakChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8ABB85C1F98E34C434EB91 /* Pods_KavakChallengeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A2349CB22C4362B00C2B387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A2349AB22C4362A00C2B387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2349B222C4362A00C2B387;
+			remoteInfo = KavakChallenge;
+		};
+		9A2349D622C4362B00C2B387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A2349AB22C4362A00C2B387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2349B222C4362A00C2B387;
+			remoteInfo = KavakChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2013132779F4D77642F81A1B /* Pods-KavakChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-KavakChallengeTests/Pods-KavakChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D8ABB85C1F98E34C434EB91 /* Pods_KavakChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89DEDF0DD05756E186DC90B6 /* Pods-KavakChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakChallenge.debug.xcconfig"; path = "Target Support Files/Pods-KavakChallenge/Pods-KavakChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		8A68647FFF5714108E2F146C /* Pods_KavakChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2349B322C4362A00C2B387 /* KavakChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KavakChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2349B622C4362A00C2B387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A2349B822C4362A00C2B387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A2349BB22C4362A00C2B387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A2349BE22C4362A00C2B387 /* KavakChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KavakChallenge.xcdatamodel; sourceTree = "<group>"; };
+		9A2349C022C4362B00C2B387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A2349C322C4362B00C2B387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A2349C522C4362B00C2B387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2349CA22C4362B00C2B387 /* KavakChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KavakChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2349CE22C4362B00C2B387 /* KavakChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavakChallengeTests.swift; sourceTree = "<group>"; };
+		9A2349D022C4362B00C2B387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2349D522C4362B00C2B387 /* KavakChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KavakChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2349D922C4362B00C2B387 /* KavakChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavakChallengeUITests.swift; sourceTree = "<group>"; };
+		9A2349DB22C4362B00C2B387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2349ED22C436DF00C2B387 /* BrastlewarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkModel.swift; sourceTree = "<group>"; };
+		9A2349F022C437DC00C2B387 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9A2349F322C4391900C2B387 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		BF86B7C588F29418D92EE373 /* Pods-KavakChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-KavakChallengeTests/Pods-KavakChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA45ED98AA563EA9F6B62E3D /* Pods_KavakChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E808F4B68AABF1ECB53127A3 /* Pods-KavakChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-KavakChallengeUITests/Pods-KavakChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF80990159F17F0120FDF3E /* Pods-KavakChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakChallenge.release.xcconfig"; path = "Target Support Files/Pods-KavakChallenge/Pods-KavakChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		F95A29B7E4029A7248670F83 /* Pods-KavakChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-KavakChallengeUITests/Pods-KavakChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A2349B022C4362A00C2B387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F4F93893AA7C54944B74D6 /* Pods_KavakChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2349C722C4362B00C2B387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766FC31B5147CB68CFAEBA93 /* Pods_KavakChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2349D222C4362B00C2B387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97522D34D0448514D8F82CA /* Pods_KavakChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446BE78598EC9564A34BA712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA45ED98AA563EA9F6B62E3D /* Pods_KavakChallenge.framework */,
+				8A68647FFF5714108E2F146C /* Pods_KavakChallengeTests.framework */,
+				4D8ABB85C1F98E34C434EB91 /* Pods_KavakChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522C9368D921E3516ABB5647 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89DEDF0DD05756E186DC90B6 /* Pods-KavakChallenge.debug.xcconfig */,
+				ECF80990159F17F0120FDF3E /* Pods-KavakChallenge.release.xcconfig */,
+				2013132779F4D77642F81A1B /* Pods-KavakChallengeTests.debug.xcconfig */,
+				BF86B7C588F29418D92EE373 /* Pods-KavakChallengeTests.release.xcconfig */,
+				E808F4B68AABF1ECB53127A3 /* Pods-KavakChallengeUITests.debug.xcconfig */,
+				F95A29B7E4029A7248670F83 /* Pods-KavakChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A2349AA22C4362A00C2B387 = {
+			isa = PBXGroup;
+			children = (
+				9A2349B522C4362A00C2B387 /* KavakChallenge */,
+				9A2349CD22C4362B00C2B387 /* KavakChallengeTests */,
+				9A2349D822C4362B00C2B387 /* KavakChallengeUITests */,
+				9A2349B422C4362A00C2B387 /* Products */,
+				522C9368D921E3516ABB5647 /* Pods */,
+				446BE78598EC9564A34BA712 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A2349B422C4362A00C2B387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A2349B322C4362A00C2B387 /* KavakChallenge.app */,
+				9A2349CA22C4362B00C2B387 /* KavakChallengeTests.xctest */,
+				9A2349D522C4362B00C2B387 /* KavakChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A2349B522C4362A00C2B387 /* KavakChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				9A2349EC22C436AF00C2B387 /* Utils */,
+				9A2349EB22C4369F00C2B387 /* ViewModel */,
+				9A2349EA22C4367B00C2B387 /* Controllers */,
+				9A2349E922C4366C00C2B387 /* Views */,
+				9A2349E722C4364200C2B387 /* Model */,
+				9A2349B622C4362A00C2B387 /* AppDelegate.swift */,
+				9A2349B822C4362A00C2B387 /* ViewController.swift */,
+				9A2349BA22C4362A00C2B387 /* Main.storyboard */,
+				9A2349C022C4362B00C2B387 /* Assets.xcassets */,
+				9A2349C222C4362B00C2B387 /* LaunchScreen.storyboard */,
+				9A2349C522C4362B00C2B387 /* Info.plist */,
+				9A2349BD22C4362A00C2B387 /* KavakChallenge.xcdatamodeld */,
+			);
+			path = KavakChallenge;
+			sourceTree = "<group>";
+		};
+		9A2349CD22C4362B00C2B387 /* KavakChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A2349CE22C4362B00C2B387 /* KavakChallengeTests.swift */,
+				9A2349D022C4362B00C2B387 /* Info.plist */,
+			);
+			path = KavakChallengeTests;
+			sourceTree = "<group>";
+		};
+		9A2349D822C4362B00C2B387 /* KavakChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A2349D922C4362B00C2B387 /* KavakChallengeUITests.swift */,
+				9A2349DB22C4362B00C2B387 /* Info.plist */,
+			);
+			path = KavakChallengeUITests;
+			sourceTree = "<group>";
+		};
+		9A2349E722C4364200C2B387 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A2349ED22C436DF00C2B387 /* BrastlewarkModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A2349E922C4366C00C2B387 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A2349EA22C4367B00C2B387 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A2349F322C4391900C2B387 /* MainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9A2349EB22C4369F00C2B387 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A2349F022C437DC00C2B387 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9A2349EC22C436AF00C2B387 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A2349B222C4362A00C2B387 /* KavakChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2349DE22C4362C00C2B387 /* Build configuration list for PBXNativeTarget "KavakChallenge" */;
+			buildPhases = (
+				CBD20E9D0FB45BC1663A9CEE /* [CP] Check Pods Manifest.lock */,
+				9A2349AF22C4362A00C2B387 /* Sources */,
+				9A2349B022C4362A00C2B387 /* Frameworks */,
+				9A2349B122C4362A00C2B387 /* Resources */,
+				72C267F864C6FF02F7B269A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KavakChallenge;
+			productName = KavakChallenge;
+			productReference = 9A2349B322C4362A00C2B387 /* KavakChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A2349C922C4362B00C2B387 /* KavakChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2349E122C4362C00C2B387 /* Build configuration list for PBXNativeTarget "KavakChallengeTests" */;
+			buildPhases = (
+				43B8414C3DDE1171AC13D8A7 /* [CP] Check Pods Manifest.lock */,
+				9A2349C622C4362B00C2B387 /* Sources */,
+				9A2349C722C4362B00C2B387 /* Frameworks */,
+				9A2349C822C4362B00C2B387 /* Resources */,
+				33D9BFBB48167E0BDDE577C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A2349CC22C4362B00C2B387 /* PBXTargetDependency */,
+			);
+			name = KavakChallengeTests;
+			productName = KavakChallengeTests;
+			productReference = 9A2349CA22C4362B00C2B387 /* KavakChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A2349D422C4362B00C2B387 /* KavakChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2349E422C4362C00C2B387 /* Build configuration list for PBXNativeTarget "KavakChallengeUITests" */;
+			buildPhases = (
+				B1B28DE31E7F0CB8F8845EDF /* [CP] Check Pods Manifest.lock */,
+				9A2349D122C4362B00C2B387 /* Sources */,
+				9A2349D222C4362B00C2B387 /* Frameworks */,
+				9A2349D322C4362B00C2B387 /* Resources */,
+				C1968490BFE8F1C59923227D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A2349D722C4362B00C2B387 /* PBXTargetDependency */,
+			);
+			name = KavakChallengeUITests;
+			productName = KavakChallengeUITests;
+			productReference = 9A2349D522C4362B00C2B387 /* KavakChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A2349AB22C4362A00C2B387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Pablo Ramirez";
+				TargetAttributes = {
+					9A2349B222C4362A00C2B387 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9A2349C922C4362B00C2B387 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9A2349B222C4362A00C2B387;
+					};
+					9A2349D422C4362B00C2B387 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9A2349B222C4362A00C2B387;
+					};
+				};
+			};
+			buildConfigurationList = 9A2349AE22C4362A00C2B387 /* Build configuration list for PBXProject "KavakChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A2349AA22C4362A00C2B387;
+			productRefGroup = 9A2349B422C4362A00C2B387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A2349B222C4362A00C2B387 /* KavakChallenge */,
+				9A2349C922C4362B00C2B387 /* KavakChallengeTests */,
+				9A2349D422C4362B00C2B387 /* KavakChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A2349B122C4362A00C2B387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2349C422C4362B00C2B387 /* LaunchScreen.storyboard in Resources */,
+				9A2349C122C4362B00C2B387 /* Assets.xcassets in Resources */,
+				9A2349BC22C4362A00C2B387 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2349C822C4362B00C2B387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2349D322C4362B00C2B387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33D9BFBB48167E0BDDE577C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakChallengeTests/Pods-KavakChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakChallengeTests/Pods-KavakChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KavakChallengeTests/Pods-KavakChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43B8414C3DDE1171AC13D8A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KavakChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72C267F864C6FF02F7B269A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakChallenge/Pods-KavakChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakChallenge/Pods-KavakChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KavakChallenge/Pods-KavakChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B28DE31E7F0CB8F8845EDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KavakChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1968490BFE8F1C59923227D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakChallengeUITests/Pods-KavakChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KavakChallengeUITests/Pods-KavakChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KavakChallengeUITests/Pods-KavakChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD20E9D0FB45BC1663A9CEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KavakChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A2349AF22C4362A00C2B387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2349F122C437DC00C2B387 /* MainViewModel.swift in Sources */,
+				9A2349EE22C436DF00C2B387 /* BrastlewarkModel.swift in Sources */,
+				9A2349B922C4362A00C2B387 /* ViewController.swift in Sources */,
+				9A2349B722C4362A00C2B387 /* AppDelegate.swift in Sources */,
+				9A2349F422C4391900C2B387 /* MainController.swift in Sources */,
+				9A2349BF22C4362A00C2B387 /* KavakChallenge.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2349C622C4362B00C2B387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2349F522C4391900C2B387 /* MainController.swift in Sources */,
+				9A2349EF22C436DF00C2B387 /* BrastlewarkModel.swift in Sources */,
+				9A2349CF22C4362B00C2B387 /* KavakChallengeTests.swift in Sources */,
+				9A2349F222C437DC00C2B387 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2349D122C4362B00C2B387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2349DA22C4362B00C2B387 /* KavakChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A2349CC22C4362B00C2B387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2349B222C4362A00C2B387 /* KavakChallenge */;
+			targetProxy = 9A2349CB22C4362B00C2B387 /* PBXContainerItemProxy */;
+		};
+		9A2349D722C4362B00C2B387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2349B222C4362A00C2B387 /* KavakChallenge */;
+			targetProxy = 9A2349D622C4362B00C2B387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A2349BA22C4362A00C2B387 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A2349BB22C4362A00C2B387 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A2349C222C4362B00C2B387 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A2349C322C4362B00C2B387 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A2349DC22C4362B00C2B387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A2349DD22C4362B00C2B387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A2349DF22C4362C00C2B387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89DEDF0DD05756E186DC90B6 /* Pods-KavakChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V66CC3JPDJ;
+				INFOPLIST_FILE = KavakChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rb.KavakChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A2349E022C4362C00C2B387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF80990159F17F0120FDF3E /* Pods-KavakChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V66CC3JPDJ;
+				INFOPLIST_FILE = KavakChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rb.KavakChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A2349E222C4362C00C2B387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2013132779F4D77642F81A1B /* Pods-KavakChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V66CC3JPDJ;
+				INFOPLIST_FILE = KavakChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rb.KavakChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KavakChallenge.app/KavakChallenge";
+			};
+			name = Debug;
+		};
+		9A2349E322C4362C00C2B387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF86B7C588F29418D92EE373 /* Pods-KavakChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V66CC3JPDJ;
+				INFOPLIST_FILE = KavakChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rb.KavakChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KavakChallenge.app/KavakChallenge";
+			};
+			name = Release;
+		};
+		9A2349E522C4362C00C2B387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E808F4B68AABF1ECB53127A3 /* Pods-KavakChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V66CC3JPDJ;
+				INFOPLIST_FILE = KavakChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rb.KavakChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KavakChallenge;
+			};
+			name = Debug;
+		};
+		9A2349E622C4362C00C2B387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95A29B7E4029A7248670F83 /* Pods-KavakChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V66CC3JPDJ;
+				INFOPLIST_FILE = KavakChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rb.KavakChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KavakChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A2349AE22C4362A00C2B387 /* Build configuration list for PBXProject "KavakChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2349DC22C4362B00C2B387 /* Debug */,
+				9A2349DD22C4362B00C2B387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2349DE22C4362C00C2B387 /* Build configuration list for PBXNativeTarget "KavakChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2349DF22C4362C00C2B387 /* Debug */,
+				9A2349E022C4362C00C2B387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2349E122C4362C00C2B387 /* Build configuration list for PBXNativeTarget "KavakChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2349E222C4362C00C2B387 /* Debug */,
+				9A2349E322C4362C00C2B387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2349E422C4362C00C2B387 /* Build configuration list for PBXNativeTarget "KavakChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2349E522C4362C00C2B387 /* Debug */,
+				9A2349E622C4362C00C2B387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A2349BD22C4362A00C2B387 /* KavakChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A2349BE22C4362A00C2B387 /* KavakChallenge.xcdatamodel */,
+			);
+			currentVersion = 9A2349BE22C4362A00C2B387 /* KavakChallenge.xcdatamodel */;
+			path = KavakChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9A2349AB22C4362A00C2B387 /* Project object */;
+}

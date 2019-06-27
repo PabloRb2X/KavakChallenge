@@ -9,6 +9,8 @@
 import UIKit
 
 class MainController: UIViewController {
+    
+    var mainViewModel: MainViewModel = MainViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,10 @@ class MainController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        mainViewModel.getGnomesTown()
+    }
 
     /*
     // MARK: - Navigation
