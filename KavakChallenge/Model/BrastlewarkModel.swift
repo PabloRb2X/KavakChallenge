@@ -7,36 +7,48 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Gnome: Decodable {
+public class Gnome: Mappable {
     
-    let brastlewark: [Brastlewark]?
+    public var brastlewark: [Brastlewark] = []
     
-    init(brastlewark: [Brastlewark]) {
-        self.brastlewark = brastlewark
+    init(){}
+    
+    required public init?(map: Map){
+    }
+    
+    public func mapping(map: Map) {
+        brastlewark <- map["Brastlewark"]
     }
 }
 
-class Brastlewark: Decodable {
+public class Brastlewark: Mappable {
     
-    let id: Int?
-    let name: String?
-    let thumbnail: String?
-    let age: Int?
-    let weight, height: Double?
-    let hairColor: String?
-    let professions: [String]?
-    let friends: [String]?
+    public var id: Int = 0
+    public var name: String = ""
+    public var thumbnail: String = ""
+    public var age: Int = 0
+    public var weight: Double = 0.0
+    public var height: Double = 0.0
+    public var hairColor: String = ""
+    public var professions: [String] = []
+    public var friends: [String] = []
     
-    init(id: Int, name: String, thumbnail: String, age: Int, weight: Double, height: Double, hairColor: String, professions: [String], friends: [String]) {
-        self.id = id
-        self.name = name
-        self.thumbnail = thumbnail
-        self.age = age
-        self.weight = weight
-        self.height = height
-        self.hairColor = hairColor
-        self.professions = professions
-        self.friends = friends
+    init(){}
+    
+    required public init?(map: Map){
+    }
+    
+    public func mapping(map: Map) {
+        id          <- map["id"]
+        name        <- map["name"]
+        thumbnail   <- map["thumbnail"]
+        age         <- map["age"]
+        weight      <- map["weight"]
+        height      <- map["height"]
+        hairColor   <- map["hairColor"]
+        professions <- map["professions"]
+        friends     <- map["friends"]
     }
 }

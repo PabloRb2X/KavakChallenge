@@ -17,14 +17,60 @@
                     <view key="view" contentMode="scaleToFill" id="0xI-qS-Zhz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Búsqueda por nombre" translatesAutoresizingMaskIntoConstraints="NO" id="ZHM-H7-GJu">
+                                <rect key="frame" x="0.0" y="64" width="320" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AWI-Xz-DgX">
+                                <rect key="frame" x="8" y="120" width="304" height="448"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PAV-j9-U8r">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AWI-Xz-DgX" firstAttribute="top" secondItem="ZHM-H7-GJu" secondAttribute="bottom" id="LfD-PJ-WMQ"/>
+                            <constraint firstItem="AWI-Xz-DgX" firstAttribute="bottom" secondItem="rS6-Nd-sOJ" secondAttribute="bottom" id="OEL-z8-WC9"/>
+                            <constraint firstItem="rS6-Nd-sOJ" firstAttribute="trailing" secondItem="AWI-Xz-DgX" secondAttribute="trailing" constant="8" id="PUx-mw-MJy"/>
+                            <constraint firstItem="AWI-Xz-DgX" firstAttribute="leading" secondItem="0xI-qS-Zhz" secondAttribute="leading" constant="8" id="i4B-xa-VeL"/>
+                            <constraint firstItem="ZHM-H7-GJu" firstAttribute="trailing" secondItem="rS6-Nd-sOJ" secondAttribute="trailing" id="mTu-al-FKF"/>
+                            <constraint firstItem="ZHM-H7-GJu" firstAttribute="top" secondItem="rS6-Nd-sOJ" secondAttribute="top" id="muv-Tf-Eal"/>
+                            <constraint firstItem="ZHM-H7-GJu" firstAttribute="leading" secondItem="rS6-Nd-sOJ" secondAttribute="leading" id="oSy-Aa-POR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rS6-Nd-sOJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="aTE-AA-zLM"/>
+                    <connections>
+                        <outlet property="gnomeCollectionView" destination="AWI-Xz-DgX" id="YYp-D4-FCV"/>
+                        <outlet property="searchBar" destination="ZHM-H7-GJu" id="AmV-zR-mGv"/>
+                        <segue destination="4Ms-IB-cmz" kind="show" id="rHQ-p5-egL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjr-dT-lgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-253" y="916"/>
+            <point key="canvasLocation" x="-253.125" y="915.84507042253517"/>
+        </scene>
+        <!--Details Controller-->
+        <scene sceneID="iGh-TM-ypH">
+            <objects>
+                <viewController id="4Ms-IB-cmz" customClass="DetailsController" customModule="KavakChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="53S-xh-UhE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oSX-hD-DcO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhU-U1-MSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="916"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qJx-0j-VGL">

@@ -3,12 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		34F4F93893AA7C54944B74D6 /* Pods_KavakChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA45ED98AA563EA9F6B62E3D /* Pods_KavakChallenge.framework */; };
 		766FC31B5147CB68CFAEBA93 /* Pods_KavakChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A68647FFF5714108E2F146C /* Pods_KavakChallengeTests.framework */; };
+		9A22D33E22C5244400BF480C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33A22C5244400BF480C /* Service.swift */; };
+		9A22D33F22C5244400BF480C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33B22C5244400BF480C /* ServiceManager.swift */; };
+		9A22D34022C5244400BF480C /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33C22C5244400BF480C /* ServiceUtils.swift */; };
+		9A22D34122C5244400BF480C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33D22C5244400BF480C /* Extensions.swift */; };
+		9A22D34422C5248700BF480C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A22D34222C5248600BF480C /* LoadingView.xib */; };
+		9A22D34522C5248700BF480C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D34322C5248700BF480C /* LoadingView.swift */; };
+		9A22D34622C52C2A00BF480C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33A22C5244400BF480C /* Service.swift */; };
+		9A22D34722C52C2D00BF480C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33B22C5244400BF480C /* ServiceManager.swift */; };
+		9A22D34822C52C2F00BF480C /* ServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33C22C5244400BF480C /* ServiceUtils.swift */; };
+		9A22D34B22C5354300BF480C /* GnomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D34922C5354300BF480C /* GnomeViewCell.swift */; };
+		9A22D34C22C5354300BF480C /* GnomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A22D34A22C5354300BF480C /* GnomeViewCell.xib */; };
+		9A22D34D22C53B5300BF480C /* GnomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D34922C5354300BF480C /* GnomeViewCell.swift */; };
+		9A22D34E22C53B5A00BF480C /* GnomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A22D34A22C5354300BF480C /* GnomeViewCell.xib */; };
+		9A22D34F22C53CE300BF480C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D33D22C5244400BF480C /* Extensions.swift */; };
+		9A22D35022C5472300BF480C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D34322C5248700BF480C /* LoadingView.swift */; };
+		9A22D35122C5472700BF480C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A22D34222C5248600BF480C /* LoadingView.xib */; };
+		9A22D35322C5812A00BF480C /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D35222C5812A00BF480C /* DetailsController.swift */; };
+		9A22D35522C5815C00BF480C /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D35422C5815C00BF480C /* DetailsViewModel.swift */; };
+		9A22D35622C5851400BF480C /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D35222C5812A00BF480C /* DetailsController.swift */; };
+		9A22D35722C5851600BF480C /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22D35422C5815C00BF480C /* DetailsViewModel.swift */; };
 		9A2349B722C4362A00C2B387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349B622C4362A00C2B387 /* AppDelegate.swift */; };
 		9A2349B922C4362A00C2B387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2349B822C4362A00C2B387 /* ViewController.swift */; };
 		9A2349BC22C4362A00C2B387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2349BA22C4362A00C2B387 /* Main.storyboard */; };
@@ -48,6 +68,16 @@
 		4D8ABB85C1F98E34C434EB91 /* Pods_KavakChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DEDF0DD05756E186DC90B6 /* Pods-KavakChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KavakChallenge.debug.xcconfig"; path = "Target Support Files/Pods-KavakChallenge/Pods-KavakChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8A68647FFF5714108E2F146C /* Pods_KavakChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KavakChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A22D33A22C5244400BF480C /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		9A22D33B22C5244400BF480C /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		9A22D33C22C5244400BF480C /* ServiceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceUtils.swift; sourceTree = "<group>"; };
+		9A22D33D22C5244400BF480C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9A22D34222C5248600BF480C /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		9A22D34322C5248700BF480C /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		9A22D34922C5354300BF480C /* GnomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeViewCell.swift; sourceTree = "<group>"; };
+		9A22D34A22C5354300BF480C /* GnomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GnomeViewCell.xib; sourceTree = "<group>"; };
+		9A22D35222C5812A00BF480C /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		9A22D35422C5815C00BF480C /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		9A2349B322C4362A00C2B387 /* KavakChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KavakChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2349B622C4362A00C2B387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A2349B822C4362A00C2B387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,7 +150,6 @@
 				E808F4B68AABF1ECB53127A3 /* Pods-KavakChallengeUITests.debug.xcconfig */,
 				F95A29B7E4029A7248670F83 /* Pods-KavakChallengeUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -194,6 +223,10 @@
 		9A2349E922C4366C00C2B387 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A22D34322C5248700BF480C /* LoadingView.swift */,
+				9A22D34222C5248600BF480C /* LoadingView.xib */,
+				9A22D34922C5354300BF480C /* GnomeViewCell.swift */,
+				9A22D34A22C5354300BF480C /* GnomeViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				9A2349F322C4391900C2B387 /* MainController.swift */,
+				9A22D35222C5812A00BF480C /* DetailsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				9A2349F022C437DC00C2B387 /* MainViewModel.swift */,
+				9A22D35422C5815C00BF480C /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -217,6 +252,10 @@
 		9A2349EC22C436AF00C2B387 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9A22D33D22C5244400BF480C /* Extensions.swift */,
+				9A22D33A22C5244400BF480C /* Service.swift */,
+				9A22D33B22C5244400BF480C /* ServiceManager.swift */,
+				9A22D33C22C5244400BF480C /* ServiceUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -332,7 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2349C422C4362B00C2B387 /* LaunchScreen.storyboard in Resources */,
+				9A22D34422C5248700BF480C /* LoadingView.xib in Resources */,
 				9A2349C122C4362B00C2B387 /* Assets.xcassets in Resources */,
+				9A22D34C22C5354300BF480C /* GnomeViewCell.xib in Resources */,
 				9A2349BC22C4362A00C2B387 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +382,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A22D34E22C53B5A00BF480C /* GnomeViewCell.xib in Resources */,
+				9A22D35122C5472700BF480C /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,10 +521,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A22D35322C5812A00BF480C /* DetailsController.swift in Sources */,
 				9A2349F122C437DC00C2B387 /* MainViewModel.swift in Sources */,
+				9A22D33E22C5244400BF480C /* Service.swift in Sources */,
 				9A2349EE22C436DF00C2B387 /* BrastlewarkModel.swift in Sources */,
+				9A22D34B22C5354300BF480C /* GnomeViewCell.swift in Sources */,
+				9A22D34522C5248700BF480C /* LoadingView.swift in Sources */,
+				9A22D33F22C5244400BF480C /* ServiceManager.swift in Sources */,
+				9A22D34022C5244400BF480C /* ServiceUtils.swift in Sources */,
+				9A22D34122C5244400BF480C /* Extensions.swift in Sources */,
 				9A2349B922C4362A00C2B387 /* ViewController.swift in Sources */,
 				9A2349B722C4362A00C2B387 /* AppDelegate.swift in Sources */,
+				9A22D35522C5815C00BF480C /* DetailsViewModel.swift in Sources */,
 				9A2349F422C4391900C2B387 /* MainController.swift in Sources */,
 				9A2349BF22C4362A00C2B387 /* KavakChallenge.xcdatamodeld in Sources */,
 			);
@@ -492,9 +543,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2349F522C4391900C2B387 /* MainController.swift in Sources */,
+				9A22D35622C5851400BF480C /* DetailsController.swift in Sources */,
+				9A22D34F22C53CE300BF480C /* Extensions.swift in Sources */,
 				9A2349EF22C436DF00C2B387 /* BrastlewarkModel.swift in Sources */,
+				9A22D35022C5472300BF480C /* LoadingView.swift in Sources */,
+				9A22D34822C52C2F00BF480C /* ServiceUtils.swift in Sources */,
+				9A22D34622C52C2A00BF480C /* Service.swift in Sources */,
 				9A2349CF22C4362B00C2B387 /* KavakChallengeTests.swift in Sources */,
 				9A2349F222C437DC00C2B387 /* MainViewModel.swift in Sources */,
+				9A22D34722C52C2D00BF480C /* ServiceManager.swift in Sources */,
+				9A22D34D22C53B5300BF480C /* GnomeViewCell.swift in Sources */,
+				9A22D35722C5851600BF480C /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

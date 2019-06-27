@@ -2,9 +2,10 @@
 # platform :ios, '9.0'
 
 def frameworks_pods
-    pod 'Alamofire'
-    pod 'ObjectMapper'
-    pod 'AlamofireObjectMapper' 
+    pod 'Alamofire', '4.8.2'
+    pod 'ObjectMapper', '3.4.2'
+    pod 'AlamofireObjectMapper' , '5.2.0'
+    pod 'AlamofireImage'
 end
 
 target 'KavakChallenge' do
