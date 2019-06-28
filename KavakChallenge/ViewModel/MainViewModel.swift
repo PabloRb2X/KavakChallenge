@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MainProtocol {
     func didStartService()
-    func didSuccessService()
+    func didSuccessService(isLoadData: Bool)
     func didErrorService()
 }
 
@@ -21,27 +22,38 @@ class MainViewModel{
     
     var gnomes: Gnome = Gnome()
     var filter: [Brastlewark] = []
+    var images: [UIImage]? = []
+    
+    var selectedBrastlewark: Brastlewark!
+    var selectedImage: UIImage!
     
     init() {
         
     }
     
-    func getGnomesTown(){
-        mainDelegate?.didStartService()
+    func getGnomesTown(isLoadData: Bool){
         
-        service.performKavakService()
-        service.onSuccessKavakService = {(_ response: Gnome) -> Void in
+        if !isLoadData{
+            mainDelegate?.didStartService()
             
-            print("response = ", response)
-            self.gnomes = response
-            
-            self.mainDelegate?.didSuccessService()
+            service.performKavakService()
+            service.onSuccessKavakService = {(_ response: Gnome) -> Void in
+                
+                print("response = ", response)
+                self.gnomes = response
+                
+                self.mainDelegate?.didSuccessService(isLoadData: true)
+            }
+            service.onServiceError = {(_ error: ServiceError)  -> Void in
+                
+                print("Error en el servicio: ", error)
+                self.mainDelegate?.didErrorService()
+            }
         }
-        service.onServiceError = {(_ error: ServiceError)  -> Void in
-            
-            print("Error en el servicio: ", error)
-            self.mainDelegate?.didErrorService()
+        else{
+            self.mainDelegate?.didSuccessService(isLoadData: true)
         }
+        
     }
     
     func filterResults(text: String){

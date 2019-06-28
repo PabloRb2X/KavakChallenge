@@ -47,7 +47,7 @@ public class Brastlewark: Mappable {
         age         <- map["age"]
         weight      <- map["weight"]
         height      <- map["height"]
-        hairColor   <- map["hairColor"]
+        hairColor   <- map["hair_color"]
         professions <- map["professions"]
         friends     <- map["friends"]
     }

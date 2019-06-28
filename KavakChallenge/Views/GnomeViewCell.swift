@@ -27,11 +27,13 @@ class GnomeViewCell: UICollectionViewCell {
         containerView.layer.shadowRadius = 1
     }
     
-    func initCell(gnome: Brastlewark){
+    func initCell(gnome: Brastlewark, viewModelRef: MainViewModel, index: Int){
+        
         gnomeName.text = gnome.name
         gnomeAge.text = "Age: \(gnome.age)"
-        //gnomeImage.downloadImage(from: "\(gnome.thumbnail)")
-        gnomeImage.downloadImageWithAF(urlStr: gnome.thumbnail)
+        gnomeImage.tag = index
+        gnomeImage.downloadImage(from: "\(gnome.thumbnail)")
+        //gnomeImage.downloadImageWithAF(urlStr: gnome.thumbnail)
     }
 
 }

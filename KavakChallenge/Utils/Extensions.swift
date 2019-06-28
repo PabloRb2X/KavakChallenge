@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import AlamofireImage
 
+let imageCache = NSCache<NSString, AnyObject>()
+
 extension UIViewController{
     public func showLoadingView(){
         self.view.endEditing(true)
@@ -38,12 +40,22 @@ extension UIImageView{
     }
     
     func downloadImage(from stringURL: String) {
+        self.image = nil
+        
+        if let cachedImage = imageCache.object(forKey: stringURL as NSString) as? UIImage {
+            self.image = cachedImage
+            return
+        }
+        
         if let url = URL(string: stringURL){
             getData(from: url) { data, response, error in
                 guard let data = data, error == nil else { return }
                 //print(response?.suggestedFilename ?? url.lastPathComponent)
                 DispatchQueue.main.async() {
-                    self.image = UIImage(data: data)
+                    if let image = UIImage(data: data) {
+                        imageCache.setObject(image, forKey: stringURL as NSString)
+                        self.image = image
+                    }
                 }
             }
         }

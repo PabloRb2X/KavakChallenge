@@ -12,13 +12,17 @@ class MainController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var gnomeCollectionView: UICollectionView!
+    var refresher: UIRefreshControl!
     
     var mainViewModel: MainViewModel = MainViewModel()
     
     var isFilter = false
+    var isLoadData = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Gnome Twon"
 
         // Do any additional setup after loading the view.
         gnomeCollectionView.register(UINib(nibName: "GnomeViewCell", bundle: nil), forCellWithReuseIdentifier: "GnomeCell")
@@ -26,29 +30,53 @@ class MainController: UIViewController {
         gnomeCollectionView.dataSource = self
         
         searchBar.delegate = self
+        
+        refresher = UIRefreshControl()
+        gnomeCollectionView.alwaysBounceVertical = true
+        refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        gnomeCollectionView.addSubview(refresher)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        searchBar.text = ""
-        mainViewModel.emptyFilter()
         
         mainViewModel.mainDelegate = self
-        mainViewModel.getGnomesTown()
+        mainViewModel.getGnomesTown(isLoadData: isLoadData)
+    }
+    
+    @objc func loadData(){
+        
+        isLoadData = false
+        mainViewModel.getGnomesTown(isLoadData: isLoadData)
+        stopRefresher()
+    }
+    
+    func stopRefresher() {
+        self.refresher.endRefreshing()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailController = segue.destination as? DetailsController{
+            
+            detailController.detailsViewModel.gnome = mainViewModel.selectedBrastlewark
+            detailController.detailsViewModel.image = mainViewModel.selectedImage
+        }
+    }
 }
 
 extension MainController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailsViewController = DetailsController()
+        guard let cell = collectionView.cellForItem(at: indexPath) as? GnomeViewCell else {return}
+        
         if !isFilter{
-            detailsViewController.detailsViewModel.gnome = mainViewModel.gnomes.brastlewark[indexPath.row]
+            mainViewModel.selectedBrastlewark = mainViewModel.gnomes.brastlewark[indexPath.row]
         }
         else{
-            detailsViewController.detailsViewModel.gnome = mainViewModel.filter[indexPath.row]
+            mainViewModel.selectedBrastlewark = mainViewModel.filter[indexPath.row]
         }
+        mainViewModel.selectedImage = cell.gnomeImage.image
         
-        navigationController?.pushViewController(detailsViewController, animated: true)
+        //navigationController?.pushViewController(detailsViewController, animated: true)
+        self.performSegue(withIdentifier: "detailsSegue", sender: nil)
     }
 }
 
@@ -67,10 +95,10 @@ extension MainController: UICollectionViewDataSource{
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GnomeCell", for: indexPath) as? GnomeViewCell{
             
             if !isFilter{
-                cell.initCell(gnome: mainViewModel.gnomes.brastlewark[indexPath.row])
+                cell.initCell(gnome: mainViewModel.gnomes.brastlewark[indexPath.row], viewModelRef: mainViewModel, index: indexPath.row)
             }
             else{
-                cell.initCell(gnome: mainViewModel.filter[indexPath.row])
+                cell.initCell(gnome: mainViewModel.filter[indexPath.row], viewModelRef: mainViewModel, index: indexPath.row)
             }
             
             return cell
@@ -114,8 +142,9 @@ extension MainController: MainProtocol{
         self.showLoadingView()
     }
     
-    func didSuccessService() {
+    func didSuccessService(isLoadData: Bool) {
         self.dismissLoadingView()
+        self.isLoadData = isLoadData
         
         gnomeCollectionView.reloadData()
     }
@@ -125,7 +154,7 @@ extension MainController: MainProtocol{
         
         let retryAction = UIAlertAction(title: "Reintentar", style: .default, handler: { (action:UIAlertAction) -> Void in
                                             
-            self.mainViewModel.getGnomesTown()
+            self.mainViewModel.getGnomesTown(isLoadData: false)
         })
         
         let cancelAction = UIAlertAction(title: "Cancelar", style: .default) { (action: UIAlertAction) -> Void in
